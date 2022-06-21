@@ -1,6 +1,154 @@
+﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="refresh" content="0;URL='accueil/accueil.php'">
-	</head>
-	<body></body>
+    <head>
+        <title>Algorithme - Saison 1 - Exo 1</title>
+        <!-- Charset -->
+        <meta
+        charset="utf-8"/>
+        <!-- For Internet Explhorreur : to force css3 -->
+        <meta
+        http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <!-- Tablettes 'n' Mobiles -->
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!--main js-->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/commun.js"></script>
+        <?php include "commun/head.html" ?>
+        <!--main style-->
+        <link rel="stylesheet" type="text/css" media="screen" href="css/global.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+ 
+ 
+   <!--     
+        <link rel="stylesheet" href="../css/codepen-embed.min.css"> -->
+       
+       
+        <link rel="stylesheet" type="text/css" href="css/codepen-embed.min.css">       
+        <script src="js/highlight.js"></script>
+        <script src="js/css.min.js"></script>
+        <script src="js/javascript.min.js"></script>
+    
+
+        
+    </head>
+
+    <body>
+        
+        <div id="page">
+            <!--header start-->
+            <header>
+                
+                <div id="bandeau_langages">
+                    <img id="doge" src="img/doge.gif">
+                    <img src="img/html.png"> 
+                    <img src="img/css.png">               
+                    <img src="img/javascript.png">
+                    <img src="img/jquery.png">
+                    <img src="img/php.png">
+                    
+                </div>
+                <div id="h1"><h1><span>Ex</span>ercices d'<span>Algo</span></h1></div>            
+            </header>
+
+
+            <!--nav-->
+            <a href="#menu" class="menubtn">MENU</a>
+
+            <nav id="menu" class="menu" role="navigation">
+                <ul id="sessions"></ul>
+              </nav>
+
+            <!--section start-->
+            <section>
+            
+
+            
+            <div id="enonce_pseudo">
+
+                <div>
+                    <h2>Enoncé :</h2>
+                    <button class="bouton_zoom" id="zoom_enonce">zoom</button>
+                    <div id="enonce">
+                        
+                        <p id="exo_numero"></p>
+                        <p id="enonce_titre"></p>
+                        <p id="enonce_contenu">
+                        </p>               
+                    </div>
+                </div>
+                
+                <div>
+                    <div id="pseudo_code"></div>
+                    <h2>Pseudo-code :</h2>
+                    <div>
+                        <button class="bouton_zoom" id="zoom_pseudo">zoom</button>
+                        <div  class="pseudo_code_commun" id="pseudo_code_contenu"></div>                        
+                    </div>
+                </div>
+            </div>
+
+
+            
+    
+
+            <div id="affichage">   
+                
+                <div>
+                   
+
+                    <h2 class="titre_code">Code :</h2>
+                    <div> 
+                        <button class="bouton_zoom" id="zoom_code">zoom</button>
+                        <div id="code">
+                            <div id="bouton_langages"class="buttons">
+                                <div>                                
+                                    <button id="bouton_js">JavaScript</button>
+                                    <button id="bouton_jq">JQuery</button>
+                                    <button id="bouton_php">PHP</button> </div>
+                                <div>                                
+                                    <button id="bouton_exe" >Executer </button> </div>                    
+                                </div>
+                                <div id="inputs"></div>
+                            <pre>
+                                <code class=" hljs" id="contenu_code"></code>
+                            </pre> <!-- Balise qui permet de conserver le formatage du texte -->
+                        </div>
+                    </div>
+                </div>
+            
+
+                
+
+                <div id="affichage_resultat">
+                    <div>
+
+                        <h2 class="resultat">Résultat</h2>
+                        <div> 
+                            <button class="bouton_zoom" id="zoom_resultat">zoom</button>
+                            <div id="execution">
+                                <div id="contenu_execution"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+
+            
+
+            </section>
+            <!--section end-->
+
+            <!--footer start-->
+            <footer>
+              <!-- <?php require "../commun/footer.html" ?>--> 
+            </footer>
+            <!--footer end-->
+        </div>
+    </body>
 </html>
